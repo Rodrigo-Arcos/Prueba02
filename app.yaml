@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/Rodrigo-Arcos/Prueba02.git
     targetRevision: HEAD
-    path: ''
+    path: guestbook
   destination:
     server: https://kubernetes.default.svc
     namespace: guestbook
