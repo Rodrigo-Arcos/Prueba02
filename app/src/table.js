@@ -22,7 +22,7 @@ function createData(nombre, apellido, edad, mail) {
 }
 
 const rows = [
-  createData("Francisco", "González", 22, "francisco.gonzales@g.com"),
+  createData("Franciscoo", "González", 22, "francisco.gonzales@g.com"),
   createData("Carolina", "Rodríguez", 28, "carolina.rodriguez@g.com"),
   createData("Luis", "Gómez", 36, "luis.gomez@g.com"),
   createData("Catalina", "Fernández", 25, "catalina.fernandez@g.com"),
