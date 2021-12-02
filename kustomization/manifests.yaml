@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: react
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react
+  template:
+    metadata:
+      labels:
+        app: react
+    spec:
+      containers:
+      - image: rodrigoarcos/image-repository:2.0.0
+        imagePullPolicy: IfNotPresent
+        name: react
+        ports:
+        - containerPort: 80
