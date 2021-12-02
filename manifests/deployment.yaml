@@ -12,13 +12,11 @@ spec:
       labels:
         app: react
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: react
           image: rodrigoarcos/image-repository:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
-          imagePullSecrets:
-            - name: regcred
-          imagePullSecrets:
-            - name: regcred
