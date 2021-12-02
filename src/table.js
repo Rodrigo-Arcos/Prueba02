@@ -58,7 +58,7 @@ export default function DenseTable() {
           </TableBody>
         </Table>
       </TableContainer>
-      <footer className="foot-page">Derechos reservados 2020.</footer>
+      <footer className="foot-page">Derechos reservados 2020. Version 2.0.0</footer>
     </div>
   );
 }
