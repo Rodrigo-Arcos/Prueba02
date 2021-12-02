@@ -24,8 +24,10 @@ spec:
         app: react
     spec:
       containers:
-      - image: rodrigoarcos/image-repository:latest
-        imagePullPolicy: IfNotPresent
-        name: react
-        ports:
-        - containerPort: 80
+        - name: react
+          image: rodrigoarcos/image-repository:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+          imagePullSecrets:
+            - name: regcred
