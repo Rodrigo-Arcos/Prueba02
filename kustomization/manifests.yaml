@@ -24,7 +24,7 @@ spec:
         app: react
     spec:
       containers:
-      - image: rodrigoarcos/image-repository:latest
+      - image: rodrigoarcos/image-repository:1.0.0
         imagePullPolicy: IfNotPresent
         name: react
         ports:

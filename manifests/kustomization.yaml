@@ -3,7 +3,7 @@ kind: Kustomization
 
 images:
 - name: rodrigoarcos/image-repository
-  newTag: latest
+  newTag: 1.0.0
 
 resources:
 - deployment.yaml
