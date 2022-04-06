@@ -12,7 +12,7 @@ pipeline {
         registry="rodrigoarcos/image-repository:latest"
         /*registry = "react-app"
         dockerImage = ""
-        DOCKER_CERT_PATH = credentials('dockerHub')*/
+        DOCKER_CERT_PATH = credentials('dockerHub')*/ 
     }
     stages {
         stage('1) Checkout Source'){
